@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.grey-text-medium {
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    color: rgb(105, 105, 105);
+}
+
+.grey-text-small {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    color: rgb(105, 105, 105);
+}
+
+.big-text {
+    font-size: 3.5rem;
+    color: rgb(59, 59, 59);
+}
+
+.container-main {
+    margin-top: 8rem;
+}
+
+.button-round {
+    margin-top: 2rem;
+    border-radius: 2rem !important;
+    width: 9rem;
+    background-color: transparent;
+    border: .1rem solid rgb(59, 59, 59) !important;
+    transition-duration: 0.8s;
+}
+
+.button-round:hover {
+    background-color: #677281 !important;
+    color: white !important;
+}
+
+.fa-github {
+    position: absolute;
+    margin-left: 1rem !important;
+    margin-top: 3.2rem !important; 
+}
+
+.fa-linkedin {
+    position: absolute;
+    margin-left: 3.2rem !important;
+    margin-top: 3.2rem !important; 
+}
+
+a {
+    color: inherit !important;
+    cursor: pointer;
+}
+
+.a-round {
+    border: .1rem solid rgb(59, 59, 59) !important;
+    background-color: white !important;
+    height: 2.3rem;
+    color: black !important; 
+    border-radius: 2rem !important;
+    width: 15rem !important;
+}
+
+.a-round:hover {
+    background-color: #677281 !important;
+    color: white !important;
+}
+
+.container-main {
+    position: relative;
+}
+
+.img-main {
+    width: 40%;
+    float: right;
+    clear: both;
+    margin-top: -20rem;
+    max-width: 100%;
+}
+
+.container-about {
+    margin-top: 15rem;
+}
+
+.language-icon {
+    margin-top: 1rem;
+    width: 7vh;
+    margin-right: 2rem;
+    transition-duration: 0.4s;
+}
+
+.language-icon:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.container-projects {
+    margin-top: 5rem;
+}
+
+.card {
+    transition-duration: 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#aboutText {
+    font-family: 'Roboto', sans-serif !important;
+}
