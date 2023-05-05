@@ -22,32 +22,39 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page">Home</a>
+                            <a class="nav-link active" aria-current="page" id="home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" onclick="scrollToAbout()">About</a>
+                            <a class="nav-link" onclick="scrollToAbout()" id="about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" onclick="scrollToProjects()">Projects</a>
+                            <a class="nav-link" onclick="scrollToProjects()" id="projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="translatePt()" class="nav-link translate"><u>pt</u></a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="translateEn()" class="nav-link translate"><u>en</u></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <div class="container container-main">
-            <h1 class="grey-text-medium">Hello world,</h1>
-            <h1 class="big-text">I am a</h1>
-            <h1 class="big-text fullstack">F</h1></h1>
-            <h1 class="grey-text-medium">welcome to my portfolio website &lt;/&gt;</h1>
-            <button type="button" class="btn button-round" onclick="scrollToAbout()">More about me</button>
+            <h1 class="grey-text-medium" id="helloWorld">Hello world,</h1>
+            <h1 class="big-text" id="iAmA">I am a</h1>
+            <h1 class="big-text fullstack" id="fullstack">F</h1></h1>
+            <h1 class="grey-text-medium" id="portfolio">welcome to my portfolio website &lt;/&gt;</h1>
+            <button type="button" class="btn button-round" onclick="scrollToAbout()" id="moreAboutMe">More about me</button>
             <a href="https://github.com/docafavarato" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
             <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-favarato-71800b204/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a> 
             <img src="styles/images/programmer1.png" class="img-main">
         </div>
         <div class="container container-about">
-            <h1 class="big-text">About me</h1>
+            <h1 class="big-text" id="aboutBig">About me</h1>
             <h1 class="grey-text-small" id="aboutText">My name is João Pedro, and I'm a fullstack developer who is always seeking to learn more.<br>I started coding with 15 years, and my first programming language was python.<br>I have experience on web and desktop development, web scraping and data science.<br>These are all the languages I had contact to until now:</h1>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="language-icon"/>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="language-icon"/>
@@ -56,8 +63,8 @@
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="language-icon"/>
         </div>
         <div class="container container-projects">
-            <h1 class="big-text">Projects</h1>
-            <h1 class="grey-text-small">These are some projects I made. All of them and more are on my <a href="https://github.com/docafavarato" target="_blank"><u>github</u></a>.</h1>
+            <h1 class="big-text" id="projectsBig">Projects</h1>
+            <h1 class="grey-text-small" id="projectsText">These are some projects I made. All of them and more are on my <a href="https://github.com/docafavarato" target="_blank"><u>github</u></a>.</h1>
             <br>
             <div class="row">
                 <div class="col-sm-3">
@@ -65,7 +72,7 @@
                         <img src="styles/images/projects/gptclone.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">GPT Clone</h5>
-                            <p class="card-text">An artificial inteligence website made with flask and the OpenAI API.</p>
+                            <p class="card-text" id="gptClone">An artificial inteligence website made with flask and the OpenAI API.</p>
                             <a href="https://github.com/docafavarato/gpt-clone" class="btn btn-primary a-round" target="_blank">Visit</a>
                         </div>
                     </div>
@@ -75,7 +82,7 @@
                         <img src="styles/images/projects/movie.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Movie DB</h5>
-                            <p class="card-text">A movie catalog website with multiple functions made with Flask and the TMDB api.</p>
+                            <p class="card-text" id="movieDb">A movie catalog website with multiple functions made with Flask and the TMDB api.</p>
                             <a href="https://github.com/docafavarato/movie-db" class="btn btn-primary a-round" target="_blank">Visit</a>
                         </div>
                     </div>
@@ -85,7 +92,7 @@
                         <img src="styles/images/projects/filemanager.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">File manager</h5>
-                            <p class="card-text">A simple (but functional) file manager buit with python and PyQt5.</p>
+                            <p class="card-text" id="fileManager">A simple (but functional) file manager buit with python and PyQt5.</p>
                             <a href="https://github.com/docafavarato/file-manager" class="btn btn-primary a-round" target="_blank">Visit</a>
                         </div>
                     </div>
@@ -95,7 +102,7 @@
                         <img src="styles/images/projects/caixa.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Cashier</h5>
-                            <p class="card-text">A supermarket cashier system with multiple functions built with python and PyQt5.</p>
+                            <p class="card-text" id="cashier">A supermarket cashier system with multiple functions built with python and PyQt5.</p>
                             <a href="https://github.com/docafavarato/caixa-mercado" class="btn btn-primary a-round" target="_blank">Visit</a>
                         </div>
                     </div>
@@ -112,7 +119,7 @@
                             <img src="styles/images/projects/youtube.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Youtube converter</h5>
-                                <p class="card-text">A YouTube video donwloader/converter made with Python, PyTube and PyQt5.</p>
+                                <p class="card-text" id="youtubeConverter">A YouTube video donwloader/converter made with Python, PyTube and PyQt5.</p>
                                 <a href="https://github.com/docafavarato/youtube-converter" class="btn btn-primary a-round" target="_blank">Visit</a>
                             </div>
                         </div>
@@ -122,7 +129,7 @@
                             <img src="styles/images/projects/flappy.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Flappy Bird</h5>
-                                <p class="card-text">A remake of the famous game "Flappy Bird" built in C++ using the SFML game engine.</p>
+                                <p class="card-text" id="flappyBird">A remake of the famous game "Flappy Bird" built in C++ using the SFML game engine.</p>
                                 <a href="https://github.com/docafavarato/flappy-bird" class="btn btn-primary a-round" target="_blank">Visit</a>
                             </div>
                         </div>
@@ -132,7 +139,7 @@
                             <img src="styles/images/projects/smasher.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Keyboard Smasher</h5>
-                                <p class="card-text">An endless arcade-like game made in C++ with the SFML game engine. Smash that keyboard!</p>
+                                <p class="card-text" id="keyboardSmasher">An endless arcade-like game made in C++ with the SFML game engine. Smash that keyboard!</p>
                                 <a href="https://github.com/docafavarato/keyboard-smasher" class="btn btn-primary a-round" target="_blank">Visit</a>
                             </div>
                         </div>
@@ -142,7 +149,7 @@
                             <img src="styles/images/projects/csgo.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">CS:GO Stats</h5>
-                                <p class="card-text">A tracker for Counter-Strike: Global Offensive made with Flask and the tracker.gg API.</p>
+                                <p class="card-text" id="csgoStats">A tracker for Counter-Strike: Global Offensive made with Flask and the tracker.gg API.</p>
                                 <a href="https://github.com/docafavarato/csgo-stats" class="btn btn-primary a-round" target="_blank">Visit</a>
                             </div>
                         </div>
