@@ -44,7 +44,7 @@ function translatePt() {
     document.getElementById("projects").innerText = "Projetos";
     document.getElementById("helloWorld").innerText = "Olá mundo,";
     document.getElementById("iAmA").innerText = "Eu sou um";
-    document.getElementById("fullstack").innerText = "Desenvolvedor FullStack";
+    document.getElementById("fullstack").innerText = "desenvolvedor FullStack";
     document.getElementById("portfolio").innerText = "bem vindo ao meu portfólio";
     document.getElementById("aboutBig").innerText = "Sobre mim";
     document.getElementById("moreAboutMe").innerText = "Mais sobre mim";
