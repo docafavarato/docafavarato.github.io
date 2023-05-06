@@ -28,12 +28,12 @@
     border-radius: 2rem !important;
     width: 9rem;
     background-color: transparent;
-    border: .1rem solid rgb(59, 59, 59) !important;
+    border: .1rem solid rgb(0, 0, 0) !important;
     transition-duration: 0.8s;
 }
 
 .button-round:hover {
-    background-color: #677281 !important;
+    background-color: #000000 !important;
     color: white !important;
 }
 
@@ -55,7 +55,7 @@ a {
 }
 
 .a-round {
-    border: .1rem solid rgb(59, 59, 59) !important;
+    border: .1rem solid rgb(0, 0, 0) !important;
     background-color: white !important;
     height: 2.3rem;
     color: black !important; 
@@ -64,7 +64,7 @@ a {
 }
 
 .a-round:hover {
-    background-color: #677281 !important;
+    background-color: #000000 !important;
     color: white !important;
 }
 
