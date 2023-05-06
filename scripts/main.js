@@ -1,6 +1,6 @@
 
 function scrollToAbout() {
-    window.scrollTo(0, 400);
+    window.scrollTo(0, 500);
 }
 
 function scrollToProjects() {
