@@ -15,7 +15,7 @@
 }
 
 .big-text {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: rgb(59, 59, 59);
 }
 
@@ -72,10 +72,11 @@ a {
 }
 
 .img-main {
-    width: 40%;
+    width: 50%;
     float: right;
     clear: both;
-    margin-top: -20rem;
+    margin-right: -5rem !important;
+    margin-top: -25rem;
     max-width: 100%;
 }
 
