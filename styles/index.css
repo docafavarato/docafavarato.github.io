@@ -111,6 +111,10 @@ a {
     font-family: 'Roboto', sans-serif !important;
 }
 
+#chevronDown {
+    margin-left: 39.2rem;
+}
+
 .btn {
     display: inline-block;
     padding: 0.9rem 1.8rem;
@@ -142,4 +146,48 @@ a {
    
 .btn:hover::before {
     transform: translateX(0); 
+}
+
+@media(max-width: 768px) {
+    .grey-text-medium {
+        font-size: 1.2rem;
+    }
+    
+    .grey-text-small {
+        font-size: 1.4rem;
+    }
+    
+    .big-text {
+        font-size: 3rem;
+    }
+
+    .container-main {
+        margin-top: 5rem;
+    }
+
+    .container-about {
+        margin-top: 8rem;
+    }
+
+    .img-main {
+        display: none;
+    }
+
+    .language-icon {
+        width: 10%;
+    }
+
+    .container-projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+
+    #chevronDown {
+        margin-left: 10rem;
+    }
 }
