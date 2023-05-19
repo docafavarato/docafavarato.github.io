@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
-    background-color: #062528 !important;
+    background-color: #061719 !important;
 }
 
 section {
@@ -51,10 +51,6 @@ section.active {
 
 .navbar-brand {
     display: none;
-}
-
-.navbar-toggler {
-    color: white !important;
 }
 
 .navbar-nav {
@@ -122,6 +118,10 @@ a {
     cursor: pointer;
 }
 
+.badge {
+    background-color: #3ed4e5;
+}
+
 .a-round {
     background-color: #3ed4e5 !important;
     border: none !important;
@@ -141,16 +141,38 @@ a {
 }
 
 .img-main {
-    width: 50%;
+    width: 45%;
     float: right;
     clear: both;
-    margin-right: -5rem !important;
     margin-top: -25rem;
     max-width: 100%;
 }
 
+.container-certifications {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+}
+
+.list-group-item {
+    background-color: transparent !important;
+    color: white !important;
+    width: 90vh;
+    transition: 0.3s ease !important;
+}
+
+.list-group-item:hover {
+    background-color: #3ed4e5 !important;
+    color: black !important;
+    border: .1rem solid #3ed4e5 !important;
+}
+
 .container-about {
    margin-top: 8rem;
+}
+
+.container-certifications {
+    margin-top: 5rem;
 }
 
 .language-icon {
@@ -217,11 +239,6 @@ a {
 }
 
 @media(max-width: 768px) {
-    .navbar-brand {
-        color: white !important;
-        display: block;
-    }
-
     .navbar-collapse {
         display: unset;
         flex-direction: unset;
@@ -268,5 +285,19 @@ a {
 
     #chevronDown {
         margin-left: 10rem;
+    }
+
+    .list-group-item {
+        width: 90vw;
+    }
+
+    .navbar-nav li{
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px;
+    }
+
+    .navbar-nav a {
+        font-size: 1.2rem;
     }
 }
