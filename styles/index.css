@@ -73,9 +73,14 @@ section.active {
     transition: 0.3s ease-in-out;
 }
 
-.navbar-nav a:hover::after{
+.navbar-nav a:hover::after,
+.navbar-nav a.current::after {
     width: 100%;
     transition: width 0.2s linear;
+}
+
+.navbar-nav a.current::after {
+    width: 100%;
 }
 
 .navbar-nav a {

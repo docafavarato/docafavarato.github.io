@@ -72,23 +72,38 @@ const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav a');
 const moreButton = document.querySelector('#moreAboutMe')
 
-// Função para mudar a seção ativa
+
 function changeSection(e) {
   e.preventDefault();
 
-  // Remove a classe 'active' de todas as seções
+  const clickedLink = e.target;
+  navLinks.forEach(link => {
+    link.classList.remove('current');
+  });
+
+  clickedLink.classList.add('current');
+
   sections.forEach(section => {
     section.classList.remove('active');
   });
 
-  // Adiciona a classe 'active' à seção correspondente ao link clicado
-  const target = e.target.getAttribute('href');
+  const target = clickedLink.getAttribute('href');
   document.querySelector(target).classList.add('active');
 }
 
-// Adiciona o evento de clique a todos os links da navbar
 navLinks.forEach(link => {
   link.addEventListener('click', changeSection);
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', changeSection)
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    link.classList.add('current');
+    console.log(link.classList);
+  });
 });
 
 moreButton.addEventListener('click', changeSection);
