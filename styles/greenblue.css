@@ -5,19 +5,6 @@ body {
     background-color: #062528 !important;
 }
 
-section {
-    opacity: 0; /* Oculta todas as seções por padrão */
-    height: 0; /* Esconde todas as seções por padrão */
-    overflow: hidden; /* Esconde o conteúdo das seções por padrão */
-    transition: opacity 0.3s ease, height 0.3s ease; /* Adiciona a transição suave */
-}
-  
-section.active {
-    opacity: 1; /* Exibe a seção ativa */
-    height: auto; /* Exibe a altura da seção ativa */
-    overflow: visible; /* Exibe o conteúdo da seção ativa */
-}
-
 #fullstack {
     color: #28cfe2;
 }
@@ -150,7 +137,7 @@ a {
 }
 
 .container-about {
-   margin-top: 8rem;
+    margin-top: 15rem;
 }
 
 .language-icon {

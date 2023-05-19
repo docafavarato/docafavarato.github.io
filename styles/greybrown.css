@@ -2,24 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
-    background-color: #062528 !important;
-}
-
-section {
-    opacity: 0; /* Oculta todas as seções por padrão */
-    height: 0; /* Esconde todas as seções por padrão */
-    overflow: hidden; /* Esconde o conteúdo das seções por padrão */
-    transition: opacity 0.3s ease, height 0.3s ease; /* Adiciona a transição suave */
-}
-  
-section.active {
-    opacity: 1; /* Exibe a seção ativa */
-    height: auto; /* Exibe a altura da seção ativa */
-    overflow: visible; /* Exibe o conteúdo da seção ativa */
+    background-color: #e6e6e6 !important;
 }
 
 #fullstack {
-    color: #28cfe2;
+    color: #1f1f1f;
 }
 
 .navbar-collapse {
@@ -31,18 +18,18 @@ section.active {
 .grey-text-medium {
     font-family: 'Poppins';
     font-size: 1.8rem;
-    color: #ffffff
+    color: #121212;
 }
 
 .grey-text-small {
     font-family: 'Poppins';
     font-size: 1.5rem;
-    color: #ffffff
+    color: #121212;
 }
 
 .big-text {
     font-size: 4rem;
-    color: #ffffff
+    color: #121212;
 }
 
 .container-main {
@@ -51,10 +38,6 @@ section.active {
 
 .navbar-brand {
     display: none;
-}
-
-.navbar-toggler {
-    color: white !important;
 }
 
 .navbar-nav {
@@ -72,7 +55,7 @@ section.active {
 
 .navbar-nav a::after{
     content: "" !important;
-    background-color: #3ed4e5 !important;
+    background-color: #525252 !important;
     height: 3px !important;
     width: 0 !important;
     margin: auto !important;
@@ -87,7 +70,7 @@ section.active {
 }
 
 .navbar-nav a {
-    color: #ffffff !important;
+    color: black !important;
     font-size: 1.2rem;
 }
 
@@ -95,26 +78,28 @@ section.active {
     margin-top: 2rem;
     border-radius: 2rem !important;
     width: 9rem;
-    background-color: #3ed4e5 !important;
+    background-color: #525252 !important;
+    color: white !important;
     transition-duration: 0.8s;
 }
 
 .button-round:hover {
-    color: white !important;
+    background-color: #f7f7f7 !important;
+    color: black !important;
 }
 
 .fa-github {
     position: absolute;
     margin-left: 1rem !important;
     margin-top: 3.2rem !important; 
-    color: #ffffff
+    color: black;
 }
 
 .fa-linkedin {
     position: absolute;
     margin-left: 3.2rem !important;
     margin-top: 3.2rem !important; 
-    color: #ffffff
+    color: black;
 }
 
 a {
@@ -123,17 +108,17 @@ a {
 }
 
 .a-round {
-    background-color: #3ed4e5 !important;
+    background-color: #525252 !important;
     border: none !important;
     height: 2.3rem;
-    color: black !important; 
+    color: white !important; 
     border-radius: 2rem !important;
     width: 15rem !important;
 }
 
 .a-round:hover {
-    background-color: #3ed4e5 !important;
-    color: white !important;
+    background-color: #f7f7f7 !important;
+    color: black !important;
 }
 
 .container-main {
@@ -150,7 +135,7 @@ a {
 }
 
 .container-about {
-   margin-top: 8rem;
+    margin-top: 15rem;
 }
 
 .language-icon {
@@ -205,7 +190,7 @@ a {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #073136;
+    background-color: #f7f7f7;
     transform: translateX(-100%);
     transition: all .3s;
     z-index: -1;
@@ -218,7 +203,6 @@ a {
 
 @media(max-width: 768px) {
     .navbar-brand {
-        color: white !important;
         display: block;
     }
 

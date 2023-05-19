@@ -33,7 +33,6 @@ async function deleteSentence(eleRef) {
     }
 }
 
-
 $(document).ready(async function() {
     await typeSentence("ullStack developer.", ".fullstack");
 });
@@ -68,3 +67,28 @@ function translatePt() {
 function translateEn() {
     location.reload();
 }
+
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('nav a');
+const moreButton = document.querySelector('#moreAboutMe')
+
+// Função para mudar a seção ativa
+function changeSection(e) {
+  e.preventDefault();
+
+  // Remove a classe 'active' de todas as seções
+  sections.forEach(section => {
+    section.classList.remove('active');
+  });
+
+  // Adiciona a classe 'active' à seção correspondente ao link clicado
+  const target = e.target.getAttribute('href');
+  document.querySelector(target).classList.add('active');
+}
+
+// Adiciona o evento de clique a todos os links da navbar
+navLinks.forEach(link => {
+  link.addEventListener('click', changeSection);
+});
+
+moreButton.addEventListener('click', changeSection);
