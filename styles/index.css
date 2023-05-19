@@ -185,6 +185,8 @@ a {
 
 .card {
     transition-duration: 0.5s;
+    color: white !important;
+    background-color: #172f31 !important;
 }
 
 .card:hover {
