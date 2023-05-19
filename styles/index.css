@@ -6,16 +6,16 @@ body {
 }
 
 section {
-    opacity: 0; /* Oculta todas as seções por padrão */
-    height: 0; /* Esconde todas as seções por padrão */
-    overflow: hidden; /* Esconde o conteúdo das seções por padrão */
-    transition: opacity 0.3s ease, height 0.3s ease; /* Adiciona a transição suave */
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, height 0.3s ease;
 }
   
 section.active {
-    opacity: 1; /* Exibe a seção ativa */
-    height: auto; /* Exibe a altura da seção ativa */
-    overflow: visible; /* Exibe o conteúdo da seção ativa */
+    opacity: 1;
+    height: auto;
+    overflow: visible;
 }
 
 #fullstack {
@@ -25,7 +25,7 @@ section.active {
 .navbar-collapse {
     display: flex;
     flex-direction: row;
-    justify-content: center !important;
+    justify-content: center;
 }
 
 .grey-text-medium {
@@ -62,24 +62,20 @@ section.active {
     padding: 0px 20px;
 }
 
-.navbar-nav {
-    transition: all 0.2s ease 0s !important;
-}
-
 .navbar-nav a::after{
-    content: "" !important;
-    background-color: #3ed4e5 !important;
-    height: 3px !important;
-    width: 0 !important;
-    margin: auto !important;
-    display: block !important;
-    border-radius: 10px !important;
-    transition: 0.3s ease-in-out !important;
+    content: "";
+    background-color: #3ed4e5;
+    height: 3px;
+    width: 0;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
 }
 
 .navbar-nav a:hover::after{
-    width: 100% !important;
-    transition: width 0.2s linear !important;
+    width: 100%;
+    transition: width 0.2s linear;
 }
 
 .navbar-nav a {
@@ -89,7 +85,6 @@ section.active {
 
 .button-round {
     margin-top: 2rem;
-    border-radius: 2rem !important;
     width: 9rem;
     background-color: #3ed4e5 !important;
     transition-duration: 0.8s;
@@ -101,20 +96,20 @@ section.active {
 
 .fa-github {
     position: absolute;
-    margin-left: 1rem !important;
-    margin-top: 3.2rem !important; 
+    margin-left: 1rem;
+    margin-top: 3.2rem; 
     color: #ffffff
 }
 
 .fa-linkedin {
     position: absolute;
-    margin-left: 3.2rem !important;
-    margin-top: 3.2rem !important; 
+    margin-left: 3.2rem;
+    margin-top: 3.2rem; 
     color: #ffffff
 }
 
 a {
-    color: inherit !important;
+    color: inherit;
     cursor: pointer;
 }
 
@@ -127,12 +122,10 @@ a {
     border: none !important;
     height: 2.3rem;
     color: black !important; 
-    border-radius: 2rem !important;
-    width: 15rem !important;
+    width: 16rem !important;
 }
 
 .a-round:hover {
-    background-color: #3ed4e5 !important;
     color: white !important;
 }
 
@@ -164,7 +157,7 @@ a {
 .list-group-item:hover {
     background-color: #3ed4e5 !important;
     color: black !important;
-    border: .1rem solid #3ed4e5 !important;
+    border-color: #3ed4e5 !important;
 }
 
 .container-about {
@@ -199,7 +192,7 @@ a {
 }
 
 #aboutText {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto', sans-serif;
 }
 
 #chevronDown {
