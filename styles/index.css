@@ -174,6 +174,12 @@ a {
     border-color: #306998 !important;
 }
 
+#cpp:hover {
+    color: white !important;
+    background-color: #5E97D0 !important;
+    border-color: #5E97D0 !important;
+}
+
 #java:hover {
     background-color: #f89820 !important;
     border-color: #f89820 !important;
@@ -202,6 +208,10 @@ a {
 
 #seeCerts {
     width: 10rem;
+}
+
+.toast-container {
+    position: fixed !important;
 }
 
 .toast-body {

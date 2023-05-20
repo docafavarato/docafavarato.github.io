@@ -71,8 +71,6 @@ function translateEn() {
     location.reload();
 }
 
-
-
 let touchstartX = 0;
 let touchendX = 0;
 
@@ -83,17 +81,19 @@ function handleTouch() {
   const currentIndex = Array.from(navLinks).indexOf(currentLink);
 
   if (touchendX < touchstartX - threshold) {
+
     if (currentIndex < navLinks.length - 1) {
       currentLink.classList.remove('current');
       const nextLink = navLinks[currentIndex + 1];
       nextLink.classList.add('current');
-
+  
       const target = nextLink.getAttribute('href');
       sections.forEach(section => {
         section.classList.remove('active');
       });
       document.querySelector(target).classList.add('active');
     }
+    
   } else if (touchendX > touchstartX + threshold) {
     if (currentIndex > 0) {
       currentLink.classList.remove('current');
@@ -106,6 +106,10 @@ function handleTouch() {
       });
       document.querySelector(target).classList.add('active');
     }
+  }
+
+  if (currentIndex === 0 && touchendX < touchstartX) {
+    touchendX = touchstartX;
   }
 }
 
@@ -181,7 +185,7 @@ homeButton.addEventListener('click', function(e) {
 window.addEventListener('DOMContentLoaded', function() {
   var toast = new bootstrap.Toast(document.querySelector('.toast'));
   
-  var delay = Math.floor(Math.random() * (15000 - 10000 + 1)) + 10000;
+  var delay = Math.floor(Math.random() * (1000 - 500 + 1)) + 500;
   
   setTimeout(function() {
       toast.show();
