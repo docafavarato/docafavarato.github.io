@@ -164,8 +164,28 @@ a {
     border-color: #3ed4e5 !important;
 }
 
+#python, #js, #java, #cpp{
+    width: 100%;
+}
+
+#python:hover {
+    color: white !important;
+    background-color: #306998 !important;
+    border-color: #306998 !important;
+}
+
+#java:hover {
+    background-color: #f89820 !important;
+    border-color: #f89820 !important;
+}
+
+#js:hover {
+    background-color: #F0DB4F !important;
+    border-color: #F0DB4F !important;
+}
+
 .container-about {
-   margin-top: 8rem;
+   margin-top: 5rem;
 }
 
 .container-certifications {
@@ -248,6 +268,14 @@ a {
     margin-top: 1rem;
     display: flex;
     align-items: center !important;
+}
+
+.list-group-about {
+    display: block !important;
+}
+
+.images-group {
+    display: none;
 }
 
 .custom-tooltip {
