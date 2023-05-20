@@ -271,6 +271,7 @@ a {
 }
 
 .list-group-about {
+    margin-top: 2rem;
     display: block !important;
 }
 
@@ -303,11 +304,11 @@ a {
     }
 
     .container-main {
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     .container-about {
-        margin-top: 8rem;
+        margin-top: 3rem;
     }
 
     .img-main {
@@ -319,8 +320,13 @@ a {
     }
 
     .container-projects {
+        margin-top: 3rem;
         display: flex;
         flex-direction: column;
+    }
+
+    .container-certifications {
+        margin-top: 3rem;
     }
 
     .card {
