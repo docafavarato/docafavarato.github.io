@@ -74,7 +74,9 @@ function translateEn() {
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav a');
 const moreButton = document.querySelector('#moreAboutMe')
-
+const projectsButton = document.querySelector('#seeProjects');
+const certButton = document.querySelector('#seeCerts');
+const homeButton = document.querySelector('#backToHome');
 
 function changeSection(e) {
   e.preventDefault();
@@ -110,3 +112,28 @@ navLinks.forEach(link => {
 });
 
 moreButton.addEventListener('click', changeSection);
+moreButton.addEventListener('click', function(e) {
+  document.querySelector('#about').classList.add('current');
+})
+projectsButton.addEventListener('click', changeSection);
+projectsButton.addEventListener('click', function(e) {
+  document.querySelector('#projects').classList.add('current');
+})
+certButton.addEventListener('click', changeSection);
+certButton.addEventListener('click', function(e) {
+  document.querySelector('#certifications').classList.add('current');
+})
+homeButton.addEventListener('click', changeSection);
+homeButton.addEventListener('click', function(e) {
+  document.querySelector('#home').classList.add('current');
+})
+
+window.addEventListener('DOMContentLoaded', function() {
+  var toast = new bootstrap.Toast(document.querySelector('.toast'));
+  
+  var delay = Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000;
+  
+  setTimeout(function() {
+      toast.show();
+  }, delay);
+});

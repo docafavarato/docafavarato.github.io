@@ -181,6 +181,20 @@ a {
     transition-duration: 0.4s;
 }
 
+#seeCerts {
+    width: 10rem;
+}
+
+.toast-body {
+    background-color: #172f31;
+    color: white;
+}
+
+.container-back-to-home {
+    display: flex !important;;
+    margin-left: 28rem !important;
+}
+
 .container-projects {
     margin-top: 5rem;
 }
@@ -308,5 +322,9 @@ a {
 
     .navbar-nav a {
         font-size: 1.2rem;
+    }
+
+    .container-see-projects, .container-back-to-home {
+        display: none;
     }
 }

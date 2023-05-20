@@ -20,7 +20,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" id="home" href="#homeS">Home</a>
+                            <a class="nav-link current" aria-current="page" id="home" href="#homeS">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="about" href="#aboutS">About</a>
@@ -59,6 +59,9 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="language-icon" class="language-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="C++" data-bs-custom-class="custom-tooltip"/>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="language-icon" class="language-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="JavaScript" data-bs-custom-class="custom-tooltip"/>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="language-icon" class="language-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="HTML" data-bs-custom-class="custom-tooltip"/>
+            </div>
+            <div class="container container-see-projects">
+                <button class="btn btn-transition button-round" id="seeProjects" href="#projectsS">See projects</button>
             </div>
         </section>
 
@@ -111,7 +114,7 @@
                 </div>
                 <br>
                 <img src="styles/fonts/chevron-down-white.svg" role="button" data-bs-toggle="collapse" data-bs-target="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects" style="cursor: pointer; width: 1.5rem;" id="chevronDown">
-                <br>
+                <br>  
                 <div class="collapse" id="collapseProjects">
                     <div class="row">
                         <div class="col-sm-3">
@@ -157,13 +160,16 @@
                     </div>
                 </div>
             </div>
+            <div class="container" style="display: none;">
+                <button class="btn btn-transition button-round" id="seeCerts" href="#certificationsS">See certifications</button>
+            </div>
         </section>
 
         <section id="certificationsS">
             <div class="container container-certifications">
                 <h1 class="big-text">Certifications</h1>
                 <ul class="list-group">
-                    <a href="https://certificates.cs50.io/d5661a4d-b690-4703-9810-f29032ee439d.pdf?size=letter" class="list-group-item" aria-current="true">
+                    <a href="https://certificates.cs50.io/d5661a4d-b690-4703-9810-f29032ee439d.pdf?size=letter" class="list-group-item" aria-current="true"  target="_blank">
                         <div class="d-flex w-100 justify-content-between">
                           <h5 class="mb-1">CS50: Introduction to Computer Science</h5>
                           <small>10 weeks</small>
@@ -171,17 +177,33 @@
                         <p class="mb-1">An introduction to the intellectual enterprises of computer science and the art of programming, including 10 problem sets, 9 labs and one final project.</p>
                         <small>Harvard</small>
                     </a>
-                    <a href="https://www.udemy.com/certificate/UC-60664b2a-bd7e-4dd2-b1cd-34ab5f33c4c6/" class="list-group-item" aria-current="true">
+                    <a href="https://www.udemy.com/certificate/UC-60664b2a-bd7e-4dd2-b1cd-34ab5f33c4c6/" class="list-group-item" aria-current="true"  target="_blank">
                         <div class="d-flex w-100 justify-content-between">
                           <h5 class="mb-1">Java completo</h5>
                           <small>54.5 hours</small>
                         </div>
-                        <p class="mb-1">OOP, Spring Boot, NoSQL, JavaFX, MongoDB</p>
+                        <p class="mb-1">Objected oriented programming, Spring Boot, NoSQL, JavaFX, MongoDB, JDBC, JPA.</p>
                         <small>Udemy</small>
                     </a>
                 </ul>
             </div>
+            <div class="container container-back-to-home">
+                <button class="btn btn-transition button-round" id="backToHome" href="#homeS">Back to home</button>
+            </div>
         </section>
+
+        <div class="toast-container bottom-0 end-0 p-3">
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <strong class="me-auto">João</strong>
+                  <small>Now</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Liked my portfolio? Contact me through one of my networks.
+                </div>
+            </div>
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <script src="scripts/main.js"></script>
