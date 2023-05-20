@@ -128,10 +128,11 @@ homeButton.addEventListener('click', function(e) {
   document.querySelector('#home').classList.add('current');
 })
 
+
 window.addEventListener('DOMContentLoaded', function() {
   var toast = new bootstrap.Toast(document.querySelector('.toast'));
   
-  var delay = Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000;
+  var delay = Math.floor(Math.random() * (15000 - 10000 + 1)) + 10000;
   
   setTimeout(function() {
       toast.show();
