@@ -210,10 +210,6 @@ a {
     width: 10rem;
 }
 
-.toast-container {
-    position: fixed !important;
-}
-
 .toast-body {
     background-color: #172f31;
     color: white;
