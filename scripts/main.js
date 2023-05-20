@@ -185,7 +185,7 @@ homeButton.addEventListener('click', function(e) {
 window.addEventListener('DOMContentLoaded', function() {
   var toast = new bootstrap.Toast(document.querySelector('.toast'));
   
-  var delay = Math.floor(Math.random() * (30000 - 15000 + 1)) + 15000;
+  var delay = Math.floor(Math.random() * (30000 - 20000 + 1)) + 20000;
   
   setTimeout(function() {
       toast.show();
