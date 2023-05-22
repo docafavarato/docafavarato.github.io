@@ -11,34 +11,45 @@ function scrollToProjects() {
 }
 
 async function typeSentence(sentence, eleRef, delay = 100) {
-    const letters = sentence.split("");
-    let i = 0;
-    while(i < letters.length) {
-      await waitForMs(delay);
-      $(eleRef).append(letters[i]);
-      i++
-    }
-    return;
+  const words = sentence.split(" ");
+  let i = 0;
+  while (i < words.length) {
+      const currentWord = words[i];
+      let j = 0;
+      while (j < currentWord.length) {
+          await waitForMs(delay);
+          if (i === words.length - 1 && currentWord === "developer.") {
+              $(eleRef).append('<span class="white-text">' + currentWord[j] + '</span>');
+          } else {
+              $(eleRef).append(currentWord[j]);
+          }
+          j++;
+      }
+      $(eleRef).append(" ");
+      i++;
+  }
+  return;
 }
-  
+
 function waitForMs(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms))
+  return new Promise(resolve => setTimeout(resolve, ms))
 }
 
 async function deleteSentence(eleRef) {
-    const sentence = $(eleRef).html();
-    const letters = sentence.split("");
-    let i = 0;
-    while(letters.length > 0) {
+  const sentence = $(eleRef).html();
+  const letters = sentence.split("");
+  let i = 0;
+  while (letters.length > 0) {
       await waitForMs(100);
       letters.pop();
       $(eleRef).html(letters.join(""));
-    }
+  }
 }
 
 $(document).ready(async function() {
-    await typeSentence("ullStack developer.", ".fullstack");
+  await typeSentence("ullStack developer.", ".fullstack");
 });
+
 
 function translatePt() {
     document.getElementById("home").innerText = "Início";

@@ -25,6 +25,10 @@ section.active {
     overflow: visible;
 }
 
+.white-text {
+    color: white !important;
+}
+
 #fullstack {
     color: #28cfe2;
 }
