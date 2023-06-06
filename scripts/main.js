@@ -167,5 +167,5 @@ var typed = new Typed(".fullstack", {
   strings: ["Backend <span class='white-text'>developer</span>", "FullStack <span class='white-text'>developer</span>"],
   typeSpeed: 100,
   backSpeed: 50,
-  cursorChar: '_',
+  cursorChar: ""
 });
