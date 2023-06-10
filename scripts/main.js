@@ -1,47 +1,7 @@
-
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-/* async function typeSentence(sentence, eleRef, delay = 100) {
-  const words = sentence.split(" ");
-  let i = 0;
-  while (i < words.length) {
-      const currentWord = words[i];
-      let j = 0;
-      while (j < currentWord.length) {
-          await waitForMs(delay);
-          if (i === words.length - 1 && currentWord === "developer.") {
-              $(eleRef).append('<span class="white-text">' + currentWord[j] + '</span>');
-          } else {
-              $(eleRef).append(currentWord[j]);
-          }
-          j++;
-      }
-      $(eleRef).append(" ");
-      i++;
-  }
-  return;
-}
-
-function waitForMs(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
-
-async function deleteSentence(eleRef) {
-  const sentence = $(eleRef).html();
-  const letters = sentence.split("");
-  let i = 0;
-  while (letters.length > 0) {
-      await waitForMs(100);
-      letters.pop();
-      $(eleRef).html(letters.join(""));
-  }
-}
-
-$(document).ready(async function() {
-  await typeSentence("ullStack developer.", ".fullstack");
-}); */
-
+// Mobile sections touch
 let touchstartX = 0;
 let touchendX = 0;
 
@@ -94,13 +54,13 @@ document.addEventListener('touchend', function(event) {
 });
 
 
+// Section changer
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav a');
 const moreButton = document.querySelector('#moreAboutMe')
 const projectsButton = document.querySelector('#seeProjects');
 const certButton = document.querySelector('#seeCerts');
 const homeButton = document.querySelector('#backToHome');
-
 
 function changeSection(e) {
   e.preventDefault();
@@ -152,7 +112,7 @@ homeButton.addEventListener('click', function(e) {
   document.querySelector('#home').classList.add('current');
 })
 
-
+// Toast
 window.addEventListener('DOMContentLoaded', function() {
   var toast = new bootstrap.Toast(document.querySelector('.toast'));
   
@@ -163,9 +123,41 @@ window.addEventListener('DOMContentLoaded', function() {
   }, delay);
 });
 
+// Typed effect
 var typed = new Typed(".fullstack", {
   strings: ["Backend <span class='white-text'>developer</span>", "FullStack <span class='white-text'>developer</span>"],
   typeSpeed: 100,
   backSpeed: 50,
   cursorChar: ""
+});
+
+// Image ampliation
+let imgs = document.querySelectorAll('.card-img-top');
+function handleClick(e) {
+  let zoomImg = document.createElement('img');
+  zoomImg.src = e.target.src;
+  zoomImg.style.position = 'absolute';
+  zoomImg.style.zIndex = '10';
+  zoomImg.style.width = '1000px';
+  zoomImg.style.top = '50%';
+  zoomImg.style.left = '50%';
+  zoomImg.style.transform = 'translate(-50%, -50%)';
+  zoomImg.style.opacity = '0'; 
+  zoomImg.style.transition = 'opacity 0.5s';
+
+  document.body.appendChild(zoomImg);
+  setTimeout(() => {
+    zoomImg.style.opacity = '1';
+  }, 10);
+
+  setTimeout(() => {
+    zoomImg.style.opacity = '0';
+    setTimeout(() => {
+      document.body.removeChild(zoomImg);
+    }, 500);
+  }, 2000);
+}
+
+imgs.forEach(img => {
+  img.addEventListener('click', handleClick);
 });
