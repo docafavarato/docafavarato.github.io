@@ -373,3 +373,12 @@ a {
         display: none;
     }
 }
+
+a {
+    color: inherit !important;
+    transition-duration: 0.3s;
+}
+
+a:hover {
+    color: #2872e2 !important;
+}
